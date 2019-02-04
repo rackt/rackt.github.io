@@ -1,16 +1,43 @@
-<!DOCTYPE html>
-<html lang="en-US"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Implicit and Explicit type conversions in Java – rackt</title><link rel="dns-prefetch" href="//fonts.googleapis.com"><link rel="dns-prefetch" href="//s.w.org"><link rel="stylesheet" id="airi-bootstrap-css" href="https://rackt.github.io/redux/wp-content/themes/airi/css/bootstrap/bootstrap.min.css" type="text/css" media="all"><link rel="stylesheet" id="airi-style-css" href="https://rackt.github.io/redux/wp-content/themes/airi/style.css" type="text/css" media="all"><style id="airi-style-inline-css" type="text/css">
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+
+	<title>Page not found &#8211; rackt</title>
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="rackt &raquo; Feed" href="https://rackt.github.io/redux/feed/" />
+<link rel="alternate" type="application/rss+xml" title="rackt &raquo; Comments Feed" href="https://rackt.github.io/redux/comments/feed/" />
+<link rel='stylesheet' id='airi-bootstrap-css'  href='https://rackt.github.io/redux/wp-content/themes/airi/css/bootstrap/bootstrap.min.css?ver=1' type='text/css' media='all' />
+<link rel='stylesheet' id='airi-style-css'  href='https://rackt.github.io/redux/wp-content/themes/airi/style.css?ver=4.9.9' type='text/css' media='all' />
+<style id='airi-style-inline-css' type='text/css'>
 h1,h2,h3,h4,h5,h6,.site-title{font-family:Work Sans;font-weight:500;}body{font-family:Work Sans;font-weight:400;font-size:16px;}.site-title{font-size:36px;}.site-description{font-size:16px;}.main-navigation ul ul li{font-size:13px;}.blog-loop .entry-title{font-size:px;}.single-post .entry-title{font-size:36px;color:#191919;}.widget-area .widget-title{font-size:24px;}.widget-area .widget{font-size:16px;}.sidebar-column .widget-title{font-size:20px;}.sidebar-column .widget{font-size:16px;}.site-info{font-size:13px;}.woocommerce div.product .woocommerce-tabs ul.tabs li.active a,.product div.entry-summary p.price, .product div.entry-summary span.price,.athemes-blog:not(.airi_athemes_blog_skin) .posted-on a,.athemes-blog:not(.airi_athemes_blog_skin) .byline a:hover,.testimonials-section.style1:before,.single-post .read-more-link .gt,.blog-loop .read-more-link .gt,.single-post .posted-on a,.blog-loop .posted-on a,.entry-title a:hover,.airi_recent_entries .post-date,.menuStyle3 .top-bar .contact-item .fa,.menuStyle4 .contact-area .contact-block .contact-icon,.widget_categories li:hover::before,.widget_categories li:hover a{color:#f0437e;}.product .single_add_to_cart_button.button.alt,.menuStyle4 .contact-area .contact-block .contact-icon,button,.button,input[type="button"],input[type="reset"],input[type="submit"]{border-color:#f0437e;}.woocommerce-checkout button.button.alt,.woocommerce-checkout button.button.alt:hover,.woocommerce-cart .cart-collaterals .cart_totals .button:hover,.woocommerce-cart .cart-collaterals .cart_totals .button,.product .single_add_to_cart_button.button.alt:hover,.product .single_add_to_cart_button.button.alt,.woocommerce ul.products li.product .button,.menuStyle2 .main-navigation a:hover:after, .menuStyle2 .main-navigation .current-menu-item:after,.comments-area .comment-reply-link:hover,.menuStyle4 .main-navigation .header-cta:before,.menuStyle4 .main-navigation .header-cta,button,.button,input[type="button"],input[type="reset"],input[type="submit"],.menuStyle3 .main-navigation a:hover:after,.menuStyle3 .main-navigation .current-menu-item:after{background-color:#f0437e;}.menuStyle1 .site-title a{color:#ffffff;}.menuStyle1 .sticky-wrapper.is-sticky .site-title a{color:#191919;}.menuStyle1 .site-description{color:#ffffff;}.menuStyle1 .sticky-wrapper.is-sticky .site-description{color:#191919;}.menuStyle1 .main-navigation a, .menuStyle1 .fa-search{color:#ffffff;}.menuStyle1 .sticky-wrapper.is-sticky .main-navigation a, .menuStyle1 .sticky-wrapper.is-sticky .fa-search{color:#191919;}.menuStyle1 .site-header, .menuStyle1.page-template-template_page-builder .site-header{background-color:;}.menuStyle1 .is-sticky .site-header{background-color:#ffffff;}.menuStyle2 .site-title a{color:#191919;}.menuStyle2 .sticky-wrapper.is-sticky .site-title a{color:#191919;}.menuStyle2 .site-description{color:#707070;}.menuStyle2 .sticky-wrapper.is-sticky .site-description{color:#707070;}.menuStyle2 .main-navigation a{color:#191919;}.menuStyle2 .sticky-wrapper.is-sticky .main-navigation a{color:#191919;}.menuStyle2 .site-header{background-color:#fff;}.menuStyle2 .is-sticky .site-header{background-color:#ffffff;}.menuStyle3 .top-bar{background-color:#fff;}.menuStyle3 .top-bar a, .menuStyle3 .top-bar .contact-item.header-social .fa, .menuStyle3 .top-bar .contact-item.header-social a{color:#191919;}.menuStyle3 .site-title a{color:#ffffff;}.menuStyle3 .sticky-wrapper.is-sticky .site-title a{color:#191919;}.menuStyle3 .site-description{color:#ffffff;}.menuStyle3 .sticky-wrapper.is-sticky .site-description{color:#191919;}.menuStyle3 .main-navigation a{color:#ffffff;}.menuStyle3 .sticky-wrapper.is-sticky .main-navigation a{color:#191919;}.menuStyle3 .bottom-bar, .menuStyle3.page-template-template_page-builder .bottom-bar{background-color:transparent;}.menuStyle3 .is-sticky .bottom-bar{background-color:#ffffff;}.menuStyle4 .site-title a{color:#191919;}.menuStyle4 .site-description{color:#707070;}.menuStyle4 .main-navigation{background-color:#0e304e;}.menuStyle4 .main-navigation li a{color:#fff;}.menuStyle4 .site-header{background-color:#fff;}.menuStyle4 .contact-area .contact-block span:first-of-type{color:#595959;}.menuStyle4 .contact-area .contact-block span:last-of-type{color:#0e304e;}#site-navigation ul ul li a{color:#1c1c1c;}#site-navigation ul ul li{background-color:#f7f7f7;}.menuStyle1 .mobile-menu-toggle_lines, .menuStyle1 .mobile-menu-toggle_lines:before, .menuStyle1 .mobile-menu-toggle_lines:after,.menuStyle1 .mobile-menu-toggle_lines,.mobile-menu-toggle_lines:before, .mobile-menu-toggle_lines:after,.mobile-menu-toggle_lines,.menuStyle3 .mobile-menu-toggle_lines,.menuStyle3 .mobile-menu-toggle_lines:before, .menuStyle3 .mobile-menu-toggle_lines:after{background:;}.entry-title a{color:#191919;}.single-post .post-cat, .blog-loop .post-cat{background-color:#eff1f4;}.single-post .entry-meta, .blog-loop .entry-meta{color:#bfbfbf;}.single-post .entry-meta .byline a, .blog-loop .entry-meta .byline a{color:#595959;}.single-post .entry-content, .blog-loop .entry-content{color:#595959;}.widget .widget-title{color:#191919;}.widget{color:#707070;}.widget a{color:#595959;}
-</style><link rel="stylesheet" id="airi-font-awesome-css" href="https://rackt.github.io/redux/wp-content/themes/airi/css/font-awesome/css/font-awesome.min.css" type="text/css" media="all"><link rel="stylesheet" id="airi-fonts-css" href="//fonts.googleapis.com/css?family=Work+Sans:400,500,600" type="text/css" media="all"><link rel="stylesheet" id="762baf1e875629d622708e2f2706e703-css" href="//fonts.googleapis.com/css?family=Work+Sans:500" type="text/css" media="all"><link rel="stylesheet" id="aaa08318714772daa18bb4bc7b24e575-css" href="//fonts.googleapis.com/css?family=Work+Sans:regular" type="text/css" media="all"><script type="text/javascript" src="https://rackt.github.io/redux/wp-includes/js/jquery/jquery.js"></script><script type="text/javascript" src="https://rackt.github.io/redux/wp-includes/js/jquery/jquery-migrate.min.js"></script></head><body class="page-template-default page page-id-75 menuStyle2 menuNotContained sticky-header">
+</style>
+<link rel='stylesheet' id='airi-font-awesome-css'  href='https://rackt.github.io/redux/wp-content/themes/airi/css/font-awesome/css/font-awesome.min.css?ver=4.9.9' type='text/css' media='all' />
+<link rel='stylesheet' id='airi-fonts-css'  href='//fonts.googleapis.com/css?family=Work+Sans:400,500,600' type='text/css' media='all' />
+<link rel='stylesheet' id='762baf1e875629d622708e2f2706e703-css'  href='//fonts.googleapis.com/css?family=Work+Sans:500' type='text/css' media='all' />
+<link rel='stylesheet' id='aaa08318714772daa18bb4bc7b24e575-css'  href='//fonts.googleapis.com/css?family=Work+Sans:regular' type='text/css' media='all' />
+<script type='text/javascript' src='https://rackt.github.io/redux/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://rackt.github.io/redux/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='https://rackt.github.io/redux/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://rackt.github.io/redux/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 4.9.9" />
+</head>
+
+<body class="error404 hfeed menuStyle2 menuNotContained sticky-header">
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 
 		
-<header id="masthead" class="site-header"><div class="container-fluid">
+<header id="masthead" class="site-header">
+	
+	<div class="container-fluid">
 		<div class="row">
 			<div class="site-branding col-md-4 col-sm-6 col-9">
 								<p class="site-title"><a href="https://rackt.github.io/redux/" rel="home">rackt</a></p>
-						</div>
+						</div><!-- .site-branding -->
 
 			<div class="header-mobile-menu col-md-8 col-sm-6 col-3">
 				<button class="mobile-menu-toggle" aria-controls="primary-menu">
@@ -19,69 +46,68 @@ h1,h2,h3,h4,h5,h6,.site-title{font-family:Work Sans;font-weight:500;}body{font-f
 				</button>
 			</div>
 
-			<nav id="site-navigation" class="main-navigation col-md-8"><ul class="header-search-cart"><li class="header-search">
+			<nav id="site-navigation" class="main-navigation col-md-8">
+				
+						<ul class="header-search-cart">
+						<li class="header-search">
 				<div class="header-search-toggle"><a><i class="fa fa-search"></i></a></div>
 			</li>
 						<li class="header-cart-link">
 							</li>
-		</ul></nav></div>
+		</ul>
+					</nav><!-- #site-navigation -->
+
+		</div>
 	</div>
 	<div class="header-search-form">
 		<form role="search" method="get" class="search-form" action="https://rackt.github.io/redux/">
 				<label>
 					<span class="screen-reader-text">Search for:</span>
-					<input type="search" class="search-field" placeholder="Search …" value="" name="s"></label>
-				<input type="submit" class="search-submit" value="Search"></form>	</div>	
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form>	</div>	
 
-</header><div id="content" class="site-content">
+</header><!-- #masthead -->
+	<div id="content" class="site-content">
 
 	<div class="container"><div class="row">
-	<div id="primary" class="content-area col-lg-8 col-md-12">
-		<main id="main" class="site-main"><article id="post-75" class="post-75 page type-page status-publish hentry"><header class="entry-header"><h1 class="entry-title">Implicit and Explicit type conversions in Java</h1>	</header><div class="entry-content">
-		<p>Here is a nice looking hierarchical table which describes the rules for implicit and explicit conversions in Java. Any type can be expected to be implicitly converted to other types above it in the hierarchical table. Explict conversion would be required in cases were it is to be converted to an element of the type beneath it in the table.</p>
-<p>double(64 bits)<br>
-————————<br>
-|<br>
-|</p>
-<p>float (32 bits)<br>
-————————<br>
-|<br>
-|</p>
-<p>long (64 bits)<br>
-————————<br>
-|<br>
-|</p>
-<p>integer (32 bits) ————-> char (16 bits, non-signed)<br>
-————————<br>
-|<br>
-|</p>
-<p>short (16 bits)<br>
-————————<br>
-|<br>
-|</p>
-<p>byte (8 bits)</p>
-<p>char to short or char to byte conversions are not possible because they are incompatible data types.</p>
-	</div>
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main">
 
-	</article></main></div>
+			<section class="error-404 not-found">
+				<header class="page-header">
+					<h1 class="page-title">404</h1>
+				</header><!-- .page-header -->
+
+				<div class="page-content">
+					<p>It looks like nothing was found at this location. Maybe try searching?</p>
+
+					<form role="search" method="get" class="search-form" action="https://rackt.github.io/redux/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form>
+				</div><!-- .page-content -->
+			</section><!-- .error-404 -->
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
 
 
-<aside id="secondary" class="widget-area col-lg-4"><section id="pages-2" class="widget widget_pages"><h4 class="widget-title">Pages</h4>		<ul><li class="page_item page-item-61"><a href="https://rackt.github.io/redux/basics">Basics</a></li>
-<li class="page_item page-item-52"><a href="https://rackt.github.io/redux/">Home</a></li>
-<li class="page_item page-item-75 current_page_item"><a href="https://rackt.github.io/redux/docs-basics-reducers.html">Implicit and Explicit type conversions in Java</a></li>
-<li class="page_item page-item-65"><a href="https://rackt.github.io/redux/redux-docs-advanced-middleware.html">Middleware</a></li>
-<li class="page_item page-item-82"><a href="https://rackt.github.io/redux/docs/api/bindActionCreators.html">Parsing Java InputStream To Text and Vice Versa</a></li>
-<li class="page_item page-item-57"><a href="https://rackt.github.io/redux/react-router">Reackt Router</a></li>
-<li class="page_item page-item-59"><a href="https://rackt.github.io/redux/redux">Redux</a></li>
-<li class="page_item page-item-69"><a href="https://rackt.github.io/redux/docs-glossary.html">Remote Desktop Connection’s “no audio driver available” problem</a></li>
-<li class="page_item page-item-79"><a href="https://rackt.github.io/redux/docs/advanced/AsyncActions.html">Troubleshooting Redhat 9.0 Installation : Missing packages during installation</a></li>
-<li class="page_item page-item-85"><a href="https://rackt.github.io/redux/docs/introduction/Motivation.html">Using MSN behind a Firewall</a></li>
-		</ul></section></aside></div>
+	</div><!-- #content -->
 
 	</div></div>
 	
 	
 
-</div>
+</div><!-- #page -->
 
-<script type="text/javascript" src="https://rackt.github.io/redux/wp-content/themes/airi/js/vendor/skip-link-focus-fix.js"></script><script type="text/javascript" src="https://rackt.github.io/redux/wp-content/themes/airi/js/vendor/scripts.js"></script><script type="text/javascript" src="https://rackt.github.io/redux/wp-content/themes/airi/js/custom/custom.min.js"></script></body></html>
+<script type='text/javascript' src='https://rackt.github.io/redux/wp-content/themes/airi/js/vendor/skip-link-focus-fix.js?ver=20151215'></script>
+<script type='text/javascript' src='https://rackt.github.io/redux/wp-content/themes/airi/js/vendor/scripts.js?ver=20180223'></script>
+<script type='text/javascript' src='https://rackt.github.io/redux/wp-content/themes/airi/js/custom/custom.min.js?ver=20181017'></script>
+
+</body>
+</html>
