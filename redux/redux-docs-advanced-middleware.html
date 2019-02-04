@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script><title>Middleware – rackt</title><link rel="dns-prefetch" href="//fonts.googleapis.com"><link rel="dns-prefetch" href="//s.w.org"><link href="https://fonts.gstatic.com" crossorigin rel="preconnect"><link rel="stylesheet" id="twentyfifteen-fonts-css" href="https://fonts.googleapis.com/css?family=Noto+Sans%3A400italic%2C700italic%2C400%2C700%7CNoto+Serif%3A400italic%2C700italic%2C400%2C700%7CInconsolata%3A400%2C700&subset=latin%2Clatin-ext" type="text/css" media="all"><link rel="stylesheet" id="genericons-css" href="https://rackt.github.io/redux/wp-content/themes/twentyfifteen/genericons/genericons.css" type="text/css" media="all"><link rel="stylesheet" id="twentyfifteen-style-css" href="https://rackt.github.io/redux/wp-content/themes/twentyfifteen/style.css" type="text/css" media="all"><script type="text/javascript" src="https://rackt.github.io/redux/wp-includes/js/jquery/jquery.js"></script><script type="text/javascript" src="https://rackt.github.io/redux/wp-includes/js/jquery/jquery-migrate.min.js"></script></head><body class="page-template-default page page-id-65">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<div id="sidebar" class="sidebar">
+		<header id="masthead" class="site-header" role="banner"><div class="site-branding">
+										<p class="site-title"><a href="https://rackt.github.io/redux/" rel="home">rackt</a></p>
+									<button class="secondary-toggle">Menu and widgets</button>
+			</div>
+		</header><div id="secondary" class="secondary">
+
+		
+		
+					<div id="widget-area" class="widget-area" role="complementary">
+				<aside id="pages-2" class="widget widget_pages"><h2 class="widget-title">Pages</h2>		<ul><li class="page_item page-item-61"><a href="https://rackt.github.io/redux/basics">Basics</a></li>
+<li class="page_item page-item-52"><a href="https://rackt.github.io/redux/">Home</a></li>
+<li class="page_item page-item-75"><a href="https://rackt.github.io/redux/docs-basics-reducers.html">Implicit and Explicit type conversions in Java</a></li>
+<li class="page_item page-item-65 current_page_item"><a href="https://rackt.github.io/redux/redux-docs-advanced-middleware.html">Middleware</a></li>
+<li class="page_item page-item-82"><a href="https://rackt.github.io/redux/docs/api/bindActionCreators.html">Parsing Java InputStream To Text and Vice Versa</a></li>
+<li class="page_item page-item-57"><a href="https://rackt.github.io/redux/react-router">Reackt Router</a></li>
+<li class="page_item page-item-59"><a href="https://rackt.github.io/redux/redux">Redux</a></li>
+<li class="page_item page-item-69"><a href="https://rackt.github.io/redux/docs-glossary.html">Remote Desktop Connection’s “no audio driver available” problem</a></li>
+<li class="page_item page-item-79"><a href="https://rackt.github.io/redux/docs/advanced/AsyncActions.html">Troubleshooting Redhat 9.0 Installation : Missing packages during installation</a></li>
+<li class="page_item page-item-85"><a href="https://rackt.github.io/redux/docs/introduction/Motivation.html">Using MSN behind a Firewall</a></li>
+		</ul></aside></div>
+		
+	</div>
+
+	</div>
+
+	<div id="content" class="site-content">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main"><article id="post-65" class="post-65 page type-page status-publish hentry"><header class="entry-header"><h1 class="entry-title">Middleware</h1>	</header><div class="entry-content">
+		<p><span class="title">Recursive File copy in VB.NET</span></p>
+<p>VB.NET does provide System.IO.File.Copy method to perform simple file copies but doesn’t provide any built in functions to allow for directory copies like VB had in FileCopy().</p>
+<p>Here is a very useful function that does recursive file copies with all the bells and whistles that I developed while making the proxy pack application. It recursively copies all files from source to the destination directory and comes complete with flags to allow or deny overwrite & recursive copies. This can be easily re-written in C# also.</p>
+<p>‘ Recursively copy all files and subdirectories from the<br>
+‘ specified source to the specified destination.<br>
+Private Sub RecursiveCopyFiles( _<br>
+ByVal sourceDir As String, _<br>
+ByVal destDir As String, _<br>
+ByVal fRecursive As Boolean, ByVal overWrite As Boolean)</p>
+<p>Dim i As Integer<br>
+Dim posSep As Integer<br>
+Dim sDir As String<br>
+Dim aDirs() As String<br>
+Dim sFile As String<br>
+Dim aFiles() As String</p>
+<p>‘ Add trailing separators to the supplied paths if they don’t exist.<br>
+If Not sourceDir.EndsWith(System.IO.Path.DirectorySeparatorChar.ToString()) Then<br>
+sourceDir &= System.IO.Path.DirectorySeparatorChar<br>
+End If</p>
+<p>If Not destDir.EndsWith(System.IO.Path.DirectorySeparatorChar.ToString()) Then<br>
+destDir &= System.IO.Path.DirectorySeparatorChar<br>
+End If</p>
+<p>‘ Recursive switch to continue drilling down into dir structure.<br>
+If fRecursive Then</p>
+<p>‘ Get a list of directories from the current parent.<br>
+aDirs = System.IO.Directory.GetDirectories(sourceDir)</p>
+<p>For i = 0 To aDirs.GetUpperBound(0)</p>
+<p>‘ Get the position of the last separator in the current path.<br>
+posSep = aDirs(i).LastIndexOf(“\”)</p>
+<p>‘ Get the path of the source directory.<br>
+sDir = aDirs(i).Substring((posSep + 1), aDirs(i).Length – (posSep + 1))</p>
+<p>‘ Create the new directory in the destination directory.<br>
+System.IO.Directory.CreateDirectory(destDir + sDir)</p>
+<p>‘ Since we are in recursive mode, copy the children also<br>
+RecursiveCopyFiles(aDirs(i), (destDir + sDir), fRecursive, overWrite)<br>
+Next</p>
+<p>End If</p>
+<p>‘ Get the files from the current parent.<br>
+aFiles = System.IO.Directory.GetFiles(sourceDir)</p>
+<p>‘ Copy all files.<br>
+For i = 0 To aFiles.GetUpperBound(0)</p>
+<p>‘ Get the position of the trailing separator.<br>
+posSep = aFiles(i).LastIndexOf(“\”)</p>
+<p>‘ Get the full path of the source file.<br>
+sFile = aFiles(i).Substring((posSep + 1), aFiles(i).Length – (posSep + 1))<br>
+Try</p>
+<p>‘ Copy the file.<br>
+System.IO.File.Copy(aFiles(i), destDir + sFile, False)<br>
+addToConsoleWindow(“Copied ” & sFile & ” to ” & destDir)<br>
+Catch ex As Exception<br>
+If overWrite = False Then<br>
+errorBoxShow(ex.Message)<br>
+addToConsoleWindow(“Skipping…” & ex.Message)<br>
+Else<br>
+System.IO.File.Copy(aFiles(i), destDir + sFile, True)<br>
+addToConsoleWindow(“Overwriting old ” & sFile & ” in ” & destDir)<br>
+End If</p>
+<p>End Try<br>
+Next i</p>
+<p>End Sub</p>
+			</div>
+
+	
+</article></main></div>
+
+
+	</div>
+
+	<footer id="colophon" class="site-footer" role="contentinfo"><div class="site-info">
+									<a href="https://wordpress.org/" class="imprint">
+				Proudly powered by WordPress			</a>
+		</div>
+	</footer></div>
+
+<script type="text/javascript" src="https://rackt.github.io/redux/wp-content/themes/twentyfifteen/js/skip-link-focus-fix.js"></script><script type="text/javascript">
+/* <![CDATA[ */
+var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand child menu<\/span>","collapse":"<span class=\"screen-reader-text\">collapse child menu<\/span>"};
+/* ]]> */
+</script><script type="text/javascript" src="https://rackt.github.io/redux/wp-content/themes/twentyfifteen/js/functions.js"></script></body></html>
